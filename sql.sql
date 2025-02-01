@@ -204,13 +204,3 @@ BEGIN
   END
 END
 GO
-
-SELECT *FROM Genders
-SELECT *FROM ROLES
-SELECT * FROM USERS
-
-EXEC sp_Addusers 'ron1', 'ron','andre','libit','ronandre.libit@cardmri.com','1997-03-14',1,1
-EXEC sp_GetUsersInfo NULL
-EXEC sp_GetUsersInfo 'ron'
-EXEC sp_UpdateUser 'ron', 'ron','andre','libit','ronandre.libit@cardmri.com','1996-03-14',1,1
-EXEC sp_DeleteUser 'ron2'
